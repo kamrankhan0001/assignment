@@ -1,0 +1,152 @@
+/* Global Styles */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+     
+}
+.container1{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+   
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 0;  
+    
+}
+
+
+.table{
+    border: 1px solid lightgray;
+    width:50%;
+    border-spacing: 0;
+    min-height: 100px;
+    overflow-x: auto;
+    font-size: 14px;  
+    margin: auto;
+      
+}
+
+th,td{
+    text-align: center;
+    
+}
+
+th{
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    padding: 10px;
+}
+
+td{
+    padding: 10px;
+    border: 1px solid lightgray;
+    
+}
+
+tbody{
+    height: auto;
+    
+    
+}
+.container label,
+.container input,
+.container p {
+    margin-bottom: 10px;
+    
+}
+#save-button{
+    background-color: green;
+    border: none;
+    color: white;
+    
+    
+}
+#cancel{
+    background-color: red;
+    cursor: pointer;
+    border: none;
+    color: white;
+   
+   
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+}
+
+#save-button:hover {
+    background-color: green;
+    cursor: pointer;   
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 800px) {
+    /* Adjust styles for screens smaller than 600px (e.g., mobile) */
+    body {
+        font-size: 14px;
+        
+      }
+      .container {
+        margin: 10px;
+        overflow-x: hidden;
+        
+        
+      }
+      
+      .table {
+        font-size: 10px;
+        
+        
+      }
+    .container {
+        padding: 10px; 
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+
+    input, select {
+        width: 50%;
+        
+    }
+}
+
+@media screen and (min-width: 400px) {
+    /* Adjust styles for screens larger than 600px (e.g., laptops) */
+     .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;  
+        
+    } 
+    
+
+    .container label,
+    .container input,
+    .container p {
+        width: calc(50% - 10px);
+        box-sizing: border-box;
+        
+    }
+    
+    
+}

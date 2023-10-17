@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunt digital media</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Hunt Digital Media-Assignment</h1>
+    </div>
+    <div class="container">
+        <label for="Action">Action</label>
+          <input type="text">
+        <Label for="id">ID</Label>
+        <input type="text">
+        <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date">
+        <label for="end-date">End Date:</label>
+           <input type="date" id="end-date">
+             <label for="month-year">Month,Year</label>
+             <input type="text" id="month-year">
+         <label for="exclude-dates">Exclude Dates:</label>
+         <input type="date" id="exclude-dates">
+             <label for="Number of Days">Number of Days</label>
+            <input type="text" id="num-days">
+        <label for="Lead count">Lead count:</label>
+        <input type="text" id="Lead count">
+        <label for="Last Updated">Last Updated:</label>
+        <input type="date" id="Last Updated">
+    </div>
+    <div>
+        <button id="save-button" onclick="saveData()">Save</button>
+        <button id="cancel" onclick="resetForm()">Cancel</button>
+    </div>
+    <div class="container1">
+        <table class="table" id="table">
+            <thead>
+                <tr>
+                    <th>Action</th>
+                    <th>ID</th>
+                    <th>Start Date</th>
+                       <th>End Date</th>
+                       <th>Month, Year</th>
+                       <th>Date Excluded</th>
+                     <th>Number of Days</th>
+                    <th>Lead Count</th>
+                    <th>Expected DRR</th>
+                    <th>Last Update</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+        
+    
+</body>
+</html>
